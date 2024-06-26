@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Compressor</title>
+  <link rel="stylesheet" href="assets/css/zstd_image.css">
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">TunePix</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  <section class="intro">
+    <h1>Compress Your Image Files</h1>
+    <p>Select an image file to compress it.</p>
+    <label for="fileInput" class="custom-file-upload">
+      <input type="file" id="fileInput" accept="image/*" onchange="handleFileInputChange(event)">
+      Select Image
+    </label>
+    <br><br>
+    <div class="image-container">
+      <div class="image-preview">
+        <h2>Original Image</h2>
+        <img id="previewImage" src="#" alt="Preview" style="max-width: 100%; display: none;">
+      </div>
+      <div class="image-preview">
+        <h2>Compressed Image</h2>
+        <div id="compressedImageContainer"></div> <!-- Container for displaying compressed image -->
+        <a id="downloadLink" href="#" download="compressed-image.jpg" style="display: none;">Download Compressed Image</a>
+      </div>
+    </div>
+    <br><br>
+    <button onclick="compressImage()">Compress Image</button>
+    <div id="fileSizeInfo"></div>
+
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/compressorjs/1.0.5/compressor.min.js"></script>
+  <script src="assets/js/zstd_image.js"></script>
+</body>
+</html>

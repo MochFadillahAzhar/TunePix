@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Processor</title>
+    <link rel="stylesheet" href="assets/css/dynamic_audio.css">
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">TunePix</h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Process Your Audio Files</h1>
+            <p>Select an audio file compress it.</p>
+            <input type="file" id="audio-upload">
+            <button id="compress-wav-button">Compress to WAV</button>
+            <p id="audio-size-info"></p>
+            <a id="download-compressed-audio" style="display: none;">Download Compressed Audio</a>
+        </section>
+
+        <section id="audio-preview" class="audio-preview"></section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.0/lame.min.js"></script>
+    <script src="assets/js/_audio.js"></script>
+</body>
+</html>

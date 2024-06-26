@@ -1,0 +1,183 @@
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+    --background-color: #f0f4f8;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --contrast-color: #ffffff;
+}
+
+body {
+    font-family: var(--default-font);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding-top: 60px; /* Adjusted to account for the fixed header height */
+}
+
+.intro h1 {
+    color: var(--heading-color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: var(--default-color);
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+
+header {
+    --background-color: #3d4d6a;
+    --heading-color: #ffffff;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 15px 0;
+    transition: all 0.5s;
+    z-index: 997;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container-xl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+header .logo img {
+    max-height: 36px;
+    margin-right: 8px;
+}
+
+header .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 500;
+    color: var(--heading-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header .navmenu {
+    display: flex;
+    align-items: center;
+}
+
+header .navmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .navmenu ul li {
+    margin-left: 20px;
+}
+
+header .navmenu ul li a {
+    color: var(--nav-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    transition: color 0.3s;
+}
+
+header .navmenu ul li a:hover {
+    color: var(--nav-hover-color);
+}
+
+header .mobile-nav-toggle {
+    display: none;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    color: var(--heading-color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+input[type="file"], #gainControl {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    max-width: 300px; /* Menyesuaikan lebar maksimum */
+}
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px; /* Menyesuaikan lebar maksimum */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#downloadlink {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    max-width: 200px; /* Menyesuaikan lebar maksimum */
+}
+
+
+#downloadlink:hover {
+    background-color: #218838;
+}
+

@@ -1,0 +1,158 @@
+:root {
+    --default-font: "Open Sans", system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --contrast-color: #ffffff;
+    --nav-color: #ffffff;
+    --nav-hover-color: #47b2e4;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #444444;
+    --nav-dropdown-hover-color: #47b2e4;
+    --hero-background-color: #37517e;
+    --hero-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 100px; /* Menambahkan padding-top untuk menghindari overlap dengan header */
+}
+
+header {
+    color: var(--heading-color);
+    background-color: var(--background-color);
+    padding: 15px 0;
+    transition: all 0.5s;
+    z-index: 997;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.container-xl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+  
+.logo img {
+    max-height: 36px;
+    margin-right: 8px;
+}
+  
+.logo h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 500;
+    color: var(--heading-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+  
+.navmenu {
+    display: flex;
+    align-items: center;
+}
+  
+.navmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.navmenu ul li {
+    margin-left: 20px;
+}
+  
+.navmenu ul li a {
+    color: var(--nav-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    transition: color 0.3s;
+}
+  
+.navmenu ul li a:hover {
+    color: var(--nav-hover-color);
+}
+  
+.mobile-nav-toggle {
+    display: none;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 60px; /* Memberikan jarak dari header */
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+video {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%; /* Pastikan video tidak melebihi lebar kontainer */
+}
+
+#size-info {
+    margin-top: 20px;
+}
+
+#download-compressed-video {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#download-compressed-video:hover {
+    background-color: #218838;
+}

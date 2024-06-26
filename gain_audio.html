@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compress Audio with GainNode</title>
+    <link rel="stylesheet" href="assets/css/gain_audio.css">
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">TunePix</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Compress Audio with GainNode</h1>
+        <input type="file" id="fileInput">
+        <label for="gainControl" style="display: none;">Gain: </label>
+        <input type="range" id="gainControl" min="0" max="2" step="0.01" value="1" style="display: none;">
+        <button onclick="compressAudio()">Compress Audio</button>
+        <span id="originalFileSize"></span>
+        <span id="compressedFileSize" style="display: none;"></span>
+        <a id="downloadlink" style="display: none;">Download Compressed Audio</a>
+        <audio controls id="audioPlayer" style="display: none;"></audio>
+    </main>
+    
+    
+    
+
+    <script src="assets/js/gain_audio.js"></script>
+</body>
+</html>

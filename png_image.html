@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compression using Canvas API</title>
+    <link rel="stylesheet" href="assets/css/png_image.css">
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">TunePix</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro">
+        <h1>Image Compression using PNG Algorithm</h1>
+        <input type="file" id="fileInput" accept="image/png" onchange="loadImage(event)">
+        <button onclick="compressImagePNG()">Compress Image</button>
+        <div class="preview-container">
+            <div id="uploaded-image"></div>
+            <div id="compressed-image"></div>
+        </div>
+        <div id="download-link"></div>
+        <div id="size-info"></div>
+    </section>
+    
+    <script src="assets/js/png_image.js"></script>
+</body>
+</html>

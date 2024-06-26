@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Compression</title>
+    <link rel="stylesheet" href="assets/css/vidio1.css">
+</head>
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">TunePix</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+<body>
+    <div class="container">
+        <h1>Video Compression</h1>
+        <label for="video-upload">Select a video file:</label>
+        <input type="file" id="video-upload" accept="video/*" onchange="handleVideoSelect(event)">
+        <video id="video-preview" controls style="display: none;"></video>
+        <div id="compression-options">
+            <label for="compression-algorithm">Choose Compression Algorithm:</label>
+            <select id="compression-algorithm">
+                <option value="webcodecs">WebCodecs</option>
+                <option value="canvas">Canvas</option>
+            </select>
+            <button onclick="compressVideo()">Compress Video</button>
+        </div>
+        <div id="size-info">
+            <p id="original-size"></p>
+            <p id="compressed-size"></p>
+            <p id="compression-info"></p>
+        </div>
+        <video id="compressed-video-preview" controls style="display: none;"></video>
+        <a id="download-compressed-video" style="display: none;">Download Compressed Video</a>
+    </div>
+    <script src="assets/js/_vidio.js"></script>
+</body>
+</html>
